@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5766FCE01BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		F8111E0B19A951050040E7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0A19A951050040E7D1 /* AppDelegate.swift */; };
 		F8111E0D19A951050040E7D1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0C19A951050040E7D1 /* MasterViewController.swift */; };
 		F8111E0F19A951050040E7D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0E19A951050040E7D1 /* DetailViewController.swift */; };
@@ -30,6 +31,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
 			remoteInfo = "Alamofire OSX Tests";
+		};
+		5766FCE51BC39C8100A2EC79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8111E4E19A95D7C0040E7D1 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
 		};
 		F8111E5319A95D7C0040E7D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -69,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoQueueDownloadViewController.swift; sourceTree = "<group>"; };
 		F8111E0519A951050040E7D1 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8111E0919A951050040E7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8111E0A19A951050040E7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +124,7 @@
 				F8111E0E19A951050040E7D1 /* DetailViewController.swift */,
 				F8111E0C19A951050040E7D1 /* MasterViewController.swift */,
 				F8111E0819A951050040E7D1 /* Supporting Files */,
+				5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */,
 			);
 			name = Source;
 			path = Example;
@@ -135,6 +145,7 @@
 			children = (
 				F8111E5419A95D7C0040E7D1 /* Alamofire.framework */,
 				4CA707B91B27FF6400CDF7C0 /* Alamofire.framework */,
+				5766FCE61BC39C8100A2EC79 /* Alamofire.framework */,
 				F8111E5619A95D7C0040E7D1 /* Alamofire iOS Tests.xctest */,
 				4CA707BB1B27FF6400CDF7C0 /* Alamofire OSX Tests.xctest */,
 			);
@@ -217,6 +228,13 @@
 			remoteRef = 4CA707BA1B27FF6400CDF7C0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		5766FCE61BC39C8100A2EC79 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 5766FCE51BC39C8100A2EC79 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F8111E5419A95D7C0040E7D1 /* Alamofire.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -251,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8111E0F19A951050040E7D1 /* DetailViewController.swift in Sources */,
+				5766FCE01BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift in Sources */,
 				F8111E0D19A951050040E7D1 /* MasterViewController.swift in Sources */,
 				F8111E0B19A951050040E7D1 /* AppDelegate.swift in Sources */,
 			);

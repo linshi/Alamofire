@@ -89,7 +89,7 @@ class DetailViewController: UITableViewController {
                 switch segueIdentifier {
                 case "GET", "POST", "PUT", "DELETE":
                     self.body = response.result.value
-                case "DOWNLOAD":
+                case "DOWNLOAD","DOWNLOAD_QUEUE":
                     self.body = self.downloadedBodyString()
                 default:
                     break

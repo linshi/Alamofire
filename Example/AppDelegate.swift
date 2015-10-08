@@ -22,6 +22,8 @@
 
 import UIKit
 
+let myDemo = true
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
@@ -34,11 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?)
         -> Bool
     {
+        if myDemo == false {
         let splitViewController = window!.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers.last as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem()
         splitViewController.delegate = self
-
+        }
         return true
     }
 
