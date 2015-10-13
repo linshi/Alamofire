@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5766FCE01BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		57F4692D1BCCD69C00C43E13 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F4692C1BCCD69C00C43E13 /* DownloadManager.swift */; settings = {ASSET_TAGS = (); }; };
 		F8111E0B19A951050040E7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0A19A951050040E7D1 /* AppDelegate.swift */; };
 		F8111E0D19A951050040E7D1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0C19A951050040E7D1 /* MasterViewController.swift */; };
 		F8111E0F19A951050040E7D1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E0E19A951050040E7D1 /* DetailViewController.swift */; };
@@ -78,6 +79,7 @@
 
 /* Begin PBXFileReference section */
 		5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoQueueDownloadViewController.swift; sourceTree = "<group>"; };
+		57F4692C1BCCD69C00C43E13 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		F8111E0519A951050040E7D1 /* iOS Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8111E0919A951050040E7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8111E0A19A951050040E7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				F8111E0C19A951050040E7D1 /* MasterViewController.swift */,
 				F8111E0819A951050040E7D1 /* Supporting Files */,
 				5766FCDF1BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift */,
+				57F4692C1BCCD69C00C43E13 /* DownloadManager.swift */,
 			);
 			name = Source;
 			path = Example;
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8111E0F19A951050040E7D1 /* DetailViewController.swift in Sources */,
+				57F4692D1BCCD69C00C43E13 /* DownloadManager.swift in Sources */,
 				5766FCE01BC39C8000A2EC79 /* DemoQueueDownloadViewController.swift in Sources */,
 				F8111E0D19A951050040E7D1 /* MasterViewController.swift in Sources */,
 				F8111E0B19A951050040E7D1 /* AppDelegate.swift in Sources */,
