@@ -37,6 +37,8 @@ class DemoQueueDownloadViewController: UIViewController {
     override func viewDidLoad() {
         
         manager = DownloadManager(downloadURLArray: remoteMusicURLArray)
+        self.playButton.enabled = false
+        
         
         var count = 0
         var failedCount = 0
@@ -44,6 +46,7 @@ class DemoQueueDownloadViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserverForName("update_progress", object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
             print("succeed to recieve notification \(notification)")
             self.progressLabel.text = "\(++count)"
+            self.playButton.enabled = true
         }
         
         NSNotificationCenter.defaultCenter().addObserverForName("download_failed", object: nil, queue: NSOperationQueue.mainQueue()) { (notification) -> Void in
@@ -57,4 +60,10 @@ class DemoQueueDownloadViewController: UIViewController {
 
         manager?.start()
     }
+    
+    @IBOutlet weak var playButton: UIButton!
+    @IBAction func playMusic(sender: UIButton) {
+    }
+    
+    
 }

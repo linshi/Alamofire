@@ -61,6 +61,9 @@ class DownloadOperation: NSOperation {
                     print("request : \(request)")
                     print("response : \(response)")
                     print("data: \(data)")
+
+                    var songName = request?.URLString.componentsSeparatedByString("/").last as String!
+                    Song.createNewSong(songName)
                     
                     NSNotificationCenter.defaultCenter().postNotificationName("update_progress", object: request)
                     

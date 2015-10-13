@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Demo Queue Download View Controller-->
@@ -17,34 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-eB-xUm">
-                                <rect key="frame" x="56" y="109" width="203" height="43"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2a-eB-xUm">
+                                <rect key="frame" x="38" y="114" width="203" height="43"/>
                                 <animations/>
                                 <state key="normal" title="start downloading"/>
                                 <connections>
                                     <action selector="startDownloading:" destination="cO2-zb-Juu" eventType="touchUpInside" id="XZS-af-kkx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-xU-Hc8">
-                                <rect key="frame" x="383" y="114" width="154" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="succeed " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM3-xU-Hc8">
+                                <rect key="frame" x="322" y="117" width="98" height="37"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgv-rj-nOd">
-                                <rect key="frame" x="383" y="172" width="154" height="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="failed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgv-rj-nOd">
+                                <rect key="frame" x="322" y="175" width="90" height="26"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzQ-Lb-Kwx">
+                                <rect key="frame" x="51" y="278" width="203" height="43"/>
+                                <animations/>
+                                <state key="normal" title="Play It"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="cO2-zb-Juu" eventType="touchUpInside" id="qr1-CA-QVm"/>
+                                    <action selector="startDownloading:" destination="cO2-zb-Juu" eventType="touchUpInside" id="EiK-IR-4xc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dgv-rj-nOd" secondAttribute="trailing" constant="168" id="Hom-7j-S3D"/>
+                            <constraint firstItem="SM3-xU-Hc8" firstAttribute="leading" secondItem="M2a-eB-xUm" secondAttribute="trailing" constant="81" id="f4O-uO-Ze1"/>
+                            <constraint firstItem="Dgv-rj-nOd" firstAttribute="top" secondItem="M2a-eB-xUm" secondAttribute="bottom" constant="18" id="rV8-V7-FS9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SM3-xU-Hc8" secondAttribute="trailing" constant="160" id="wgH-7o-vyP"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="failedLabel" destination="Dgv-rj-nOd" id="EV2-bS-hec"/>
+                        <outlet property="playButton" destination="BzQ-Lb-Kwx" id="A8C-dh-dtr"/>
                         <outlet property="progressLabel" destination="SM3-xU-Hc8" id="qUn-4I-Zhr"/>
                     </connections>
                 </viewController>
